@@ -8,7 +8,7 @@ class App extends Component {
         <header>
           <h1 className="App-title">React-16-Example #2</h1>
         </header>
-        <div><input /></div>
+        <div><input className="border input-style" /></div>
       </div>
     );
   }
