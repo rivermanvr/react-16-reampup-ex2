@@ -1,7 +1,7 @@
 import React from 'react';
 
 const validation = ({ inputLen }) => {
-  const messageOut = (inputLen < 5) ? 'Text Length is too short' : 'Text length is a valid length';
+  const messageOut = (inputLen >= 5) ? 'Text length is a valid length' : 'Text Length is too short';
   return (
     <p>
       { messageOut }
