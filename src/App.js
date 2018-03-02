@@ -13,12 +13,14 @@ class App extends Component {
 
   render() {
     const inputTxt = this.state.inputTxt;
+    const inputLen = inputTxt.length;
     return (
       <div className="App">
         <header>
           <h1 className="App-title">React-16-Example #2</h1>
         </header>
         <div><input onChange={ this.onInputChange } value={ inputTxt } className="border input-style" type="text" /></div>
+        <p>Input Length: { inputLen }</p>
       </div>
     );
   }
