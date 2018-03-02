@@ -1,8 +1,9 @@
 import React from 'react';
+import './CharOutput.css';
 
 const charOutput = ({ character }) => {
   return (
-    <div>charOutput component: { character }</div>
+    <div className="output-element">{ character }</div>
   );
 }
 
