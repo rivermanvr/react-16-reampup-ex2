@@ -78,3 +78,6 @@ h5{
 h6{
   font-size: 23px;
 }
+strong {
+  font-weight: bold;
+}

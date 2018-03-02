@@ -24,6 +24,11 @@ body {
   border: 1px solid #000000;
 }
 
+hr {
+  width: 40%;
+  margin-bottom: 1em;
+}
+
 .input-style {
   height: 1.75em;
   width: 40%;
