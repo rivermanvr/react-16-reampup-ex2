@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Validation from './Validation/Validation';
 
 class App extends Component {
   state = {
@@ -14,6 +15,7 @@ class App extends Component {
   render() {
     const inputTxt = this.state.inputTxt;
     const inputLen = inputTxt.length;
+    const outputChar = (inputLen >= 5) ? true : false;
     return (
       <div className="App">
         <header>
@@ -21,6 +23,7 @@ class App extends Component {
         </header>
         <div><input onChange={ this.onInputChange } value={ inputTxt } className="border input-style" type="text" /></div>
         <p>Input Length: { inputLen }</p>
+        <Validation inputLen={ inputLen } />
       </div>
     );
   }
