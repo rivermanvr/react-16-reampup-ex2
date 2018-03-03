@@ -13,6 +13,15 @@ class App extends Component {
     this.setState({ inputTxt });
   }
 
+  onItemClick = (event, index) => {
+    let inputTxt = this.state.inputTxt;
+    const inputArr = inputTxt.split('');
+    inputArr.splice(index, 1);
+    inputTxt = inputArr.join('');
+    this.setState({ inputTxt });
+
+  }
+
   render() {
     const inputTxt = this.state.inputTxt;
     const inputArr = inputTxt.split('');
@@ -21,7 +30,7 @@ class App extends Component {
         <div>
           {
             inputArr.map((char, index) => {
-              return <CharOutput character={ char } key={ index } />;
+              return <CharOutput character={ char } key={ index } index={ index } onItemClick={ this.onItemClick } />;
             })
           }
         </div>
