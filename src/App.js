@@ -41,7 +41,14 @@ class App extends Component {
           <h1 className="App-title">React-16-Example #2</h1>
         </header>
         <label><strong>Enter some Text</strong></label>
-        <div><input onChange={ this.onInputChange } value={ inputTxt } className="border input-style" type="text" /></div>
+        <div>
+          <input
+            onChange={ this.onInputChange }
+            value={ inputTxt }
+            className="border input-style"
+            type="text"
+          />
+        </div>
         <p>Input Length: { inputLen }</p>
         <Validation inputLen={ inputLen } />
         <hr />
