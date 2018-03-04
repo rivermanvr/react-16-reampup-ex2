@@ -13,7 +13,7 @@ class App extends Component {
     this.setState({ inputTxt });
   }
 
-  onItemClick = (event, index) => {
+  onItemClick = (index) => {
     let inputTxt = this.state.inputTxt;
     const inputArr = inputTxt.split('');
     inputArr.splice(index, 1);

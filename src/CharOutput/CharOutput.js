@@ -3,7 +3,7 @@ import './CharOutput.css';
 
 const charOutput = ({ character, onItemClick, index }) => {
   return (
-    <div onClick={ (event) => onItemClick(event, index) } className="output-element">{ character }</div>
+    <div onClick={ () => onItemClick(index) } className="output-element">{ character }</div>
   );
 };
 
